@@ -29,4 +29,5 @@ void wifi_connect() {
   WiFi.persistent(true);
   WiFi.mode(WIFI_STA);
   WiFi.setAutoReconnect(true);
+  WiFi.reconnect(); //that one was missed
 }
